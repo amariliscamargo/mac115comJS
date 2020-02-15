@@ -26,9 +26,9 @@ document.querySelector('form').addEventListener('submit', function(event) {
         td.textContent = entrada.value;
         tr.appendChild(tdd);
         tr.appendChild(td);
-        if (entrada.value > valorMaior) {
+        if (parseInt(entrada.value) > valorMaior) {
             valorMaior = entrada.value;
-            document.getElementById('valormaior').value = "O maior valor do mês é  " + valorMaior;
+            document.getElementById('valormaior').innerHTML = "O maior valor do mês é  " + valorMaior;
         }
         i++;
     });
